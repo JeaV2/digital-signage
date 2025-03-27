@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Trailer Kiosk</title>
+    <link rel="stylesheet" href="./content/css/main.css">
+
+    <script src="./content/js/kiosk.js" defer></script>
+</head>
+<body>
+    <main>
+        <div id="hacknet">
+            <h1>Hacknet</h1>
+            <div class="gameContent">
+                <div class="trailerEmbed">
+                    <iframe src="https://www.youtube.com/embed/A-jN16bNPhk" sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
+                </div>
+                <div class="gameDescription">
+                    <p>
+                        Hacknet is an immersive, terminal-based hacking simulator for PC. Dive down a rabbit hoIe as you follow the instructions of a recently deceased hacker, whose death may not have been the accident the media reports. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <touchbar>
+        <div class="game current" id="hacknetButton">
+            <img src="./content/media/hacknet.jpg" alt="" class="current">
+        </div>
+        <div class="game" id="noitaButton">
+            <img src="./content/media/noita.jpg" alt="">
+
+        </div>
+        <div class="game" id="nightrunnersButton">
+            <img src="./content/media/nightrunners.jpg" alt="">
+        </div>
+    </touchbar>
+</body>
+</html>

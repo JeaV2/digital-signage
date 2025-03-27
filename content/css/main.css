@@ -1,0 +1,90 @@
+@import url('./colors.css');
+
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 75vh 25vh;
+    grid-template-areas: 
+    "main" 
+    "touchbar";
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+main {
+    grid-area: main;
+    background-color: #000
+}
+
+touchbar {
+    grid-area: touchbar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1em;
+    padding: 0;
+}
+
+.gameContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.trailerEmbed {
+    margin: 1em;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    width: 200vw;
+    height: 50vh;
+}
+.trailerEmbed iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.gameDescription {
+    margin: 1em;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    width: 200vw;
+    height: 50vh;
+}
+.gameDescription p {
+    padding: 1em;
+    font-size: 2em;
+    margin: 0;
+    color: #fff;
+}
+
+.game {
+    background-color: #fff;
+    width: 300px;
+    height: 20vh;
+    margin: 2em;
+    overflow: hidden;
+    border: #000000 solid 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+img {
+    position: relative;
+    height: 100%;
+    left: -5%;
+}
+
+.current {
+    transform: scale(1.1);
+}
+.current img {
+    left: 0;
+}
