@@ -3,12 +3,15 @@ const noita = document.getElementById("noitaButton");
 const nightrunners = document.getElementById("nightrunnersButton");
 const nfshp = document.getElementById("nfshpButton");
 const embeddedVideo = document.getElementById("embed");
+const videoContainer = document.getElementById("trailerEmbed");
+const descriptionContainer = document.getElementById("gameDescription");
 const description = document.getElementById("description");
+const main = document.getElementById("main");
 
 data = {
     hacknet:{
         description: "Hacknet is an immersive, terminal-based hacking simulator for PC. Dive down a rabbit hoIe as you follow the instructions of a recently deceased hacker, whose death may not have been the accident the media reports.",
-        video: "https://www.youtube.com/embed/A-jN16bNPhk"
+        video: "https://www.youtube.com/embed/A-jN16bNPhk",
     },
     noita:{
         description: "Noita is a magical action roguelite set in a world where every pixel is physically simulated. Fight, explore, melt, burn, freeze and evaporate your way through the procedurally generated world using spells you've created yourself.",
@@ -30,7 +33,11 @@ function switchButton(button) {
         noita.classList.remove("current");
         nightrunners.classList.remove("current");
         nfshp.classList.remove("current");
-        
+
+        main.style.backgroundColor = "#1a1110";
+        videoContainer.style.borderColor = "#ffb4ab";
+        descriptionContainer.style.borderColor = "#ffb4ab";
+
         embeddedVideo.src = data.hacknet.video;
         description.innerHTML = data.hacknet.description;
     }

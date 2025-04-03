@@ -39,26 +39,27 @@ h1 {
     height: 100%;
     width: 100%;
 }
-.trailerEmbed {
+.trailerMain {
     margin: 1em;
     border: 5px solid #fff;
     border-radius: 10px;
     width: 200vw;
     height: 50vh;
+    overflow: hidden;
 }
-.trailerEmbed iframe {
+.trailerMain iframe {
     width: 100%;
     height: 100%;
     border-radius: 5px;
 }
-.gameDescription {
+#gameDescription {
     margin: 1em;
     border: 5px solid #fff;
     border-radius: 10px;
     width: 200vw;
     height: 50vh;
 }
-.gameDescription p {
+#gameDescription p {
     padding: 1em;
     font-size: 2em;
     margin: 0;
