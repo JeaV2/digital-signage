@@ -8,16 +8,16 @@
 
     <script src="./content/js/kiosk.js" defer></script>
 </head>
-<body>
+<body class="hacknet">
     <main>
         <div id="hacknet">
             <h1>Hacknet</h1>
             <div class="gameContent">
                 <div class="trailerEmbed">
-                    <iframe src="https://www.youtube.com/embed/A-jN16bNPhk" sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
+                    <iframe id="embed" src="https://www.youtube.com/embed/A-jN16bNPhk" sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation"></iframe>
                 </div>
                 <div class="gameDescription">
-                    <p>
+                    <p id="description">
                         Hacknet is an immersive, terminal-based hacking simulator for PC. Dive down a rabbit hoIe as you follow the instructions of a recently deceased hacker, whose death may not have been the accident the media reports. 
                     </p>
                 </div>
@@ -25,15 +25,18 @@
         </div>
     </main>
     <touchbar>
-        <div class="game current" id="hacknetButton">
-            <img src="./content/media/hacknet.jpg" alt="" class="current">
+        <div class="game current" id="hacknetButton" onclick="switchButton('hacknet')">
+            <img src="./content/media/hacknet.jpg" alt="">
         </div>
-        <div class="game" id="noitaButton">
+        <div class="game" id="noitaButton" onclick="switchButton('noita')">
             <img src="./content/media/noita.jpg" alt="">
 
         </div>
-        <div class="game" id="nightrunnersButton">
+        <div class="game" id="nightrunnersButton" onclick="switchButton('nightrunners')">
             <img src="./content/media/nightrunners.jpg" alt="">
+        </div>
+        <div class="game" id="nfshpButton" onclick="switchButton('nfshp')">
+            <img src="./content/media/nfshp.jpg" alt="">
         </div>
     </touchbar>
 </body>
